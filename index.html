@@ -8,12 +8,12 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background: #e9e1d8;
       color: #333;
     }
     header {
-      background: #111;
-      color: #fff;
+      background: #3a2f2a; scroll-behavior:smooth;;
+      color: #fdfaf6;
       padding: 2rem;
       text-align: center;
     }
@@ -35,7 +35,7 @@
       background: #fff;
       padding: 1.5rem;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
       margin-bottom: 1.5rem;
     }
     h2 {
@@ -50,28 +50,36 @@
       background: #fff;
       padding: 1rem;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     }
     footer {
       text-align: center;
       padding: 2rem;
       color: #777;
     }
-  </style>
+    .fade-in {opacity:0; transform:translateY(20px); animation: fadeInUp 0.8s ease forwards;} 
+  @keyframes fadeInUp {to {opacity:1; transform:translateY(0);}}
+</style>
 </head>
 <body>
+  <nav style="background:#2f2622; padding:1rem; text-align:center; position:sticky; top:0; z-index:100;">
+    <a href="#about" style="color:#fdfaf6; margin:0 1rem; text-decoration:none; font-weight:bold;">Home</a>
+    <a href="#projects" style="color:#fdfaf6; margin:0 1rem; text-decoration:none; font-weight:bold;">Projects</a>
+    <a href="#awards" style="color:#fdfaf6; margin:0 1rem; text-decoration:none; font-weight:bold;">Awards</a>
+    <a href="#contact" style="color:#fdfaf6; margin:0 1rem; text-decoration:none; font-weight:bold;">Contact</a>
+  </nav>
   <header>
-    <h1>Your Name</h1>
-    <p>Artist • Developer • Creator</p>
+    <h1>Rayna Gandhe</h1>
+    <p>9th Grade Student • Future Business Leader • Artist</p>
   </header>
 
-  <section>
-    <div class="card">
+  <section id="about" class="fade-in">
+    <div class="card fade-in">
       <h2>About Me</h2>
-      <p>Write a short introduction about yourself—your passions, your creativity, and what you love making.</p>
+      <p>I'm a 9th grader passionate about business, leadership, and creativity. I aim for a prestigious college where I can grow in entrepreneurship, networking, AI, and visual arts. I love creating meaningful connections and building projects that blend tech with creativity.</p>
     </div>
 
-    <div class="card">
+    <div class="card fade-in">
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="project-tile">
@@ -89,11 +97,34 @@
       </div>
     </div>
 
-    <div class="card">
-      <h2>Contact</h2>
-      <p>Email: your-email@example.com</p>
-      <p>Instagram: @yourhandle</p>
+    <div class="card fade-in">
+      <h2 id="contact">📬 Contact</h2>
+      <p>Email: Reach me on Instagram!</p>
+      <p>Instagram: @artist.rayna</p>
     </div>
+      <div class="card fade-in">
+      <h2 id="awards">🏅 Awards & Activities</h2>
+      <ul>
+        <li>FBLA Member — Business Leadership & Competitive Events</li>
+        <li>Art Show Participation — Showcasing digital & traditional art</li>
+        <li>Community Volunteering — Supporting school and local events</li>
+      </ul>
+    </div>
+
+    <div class="card fade-in">
+      <h2>✨ Passion Projects</h2>
+      <p>Building creative projects that blend business, design, and technology — including an art-driven charity concept, portfolio design, and AI-assisted projects.</p>
+    </div>
+
+    <div class="card fade-in">
+      <h2>🎯 Goals</h2>
+      <ul>
+        <li>Attend a top-tier college for business or entrepreneurship</li>
+        <li>Grow as a leader through networking and real-world experiences</li>
+        <li>Continue exploring art, tech, and AI as powerful creative tools</li>
+      </ul>
+    </div>
+
   </section>
 
   <footer>
